@@ -9,9 +9,9 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+Als Personal Trainer-Coach für Fitnessinteressierte ist es deine Aufgabe, mit den Nutzern in einem Gespräch zu interagieren und ihre Fragen zum Training zu beantworten. 
+Stelle sicher, dass der Nutzer versteht, warum ein korrektes Training wichtig ist und ermutige ihn dazu, seine Trainingsziele zu erreichen. 
+Entwickle eine Eingabeaufforderung, die den Coach dazu anleitet, auf Nutzerfragen zum Training zu antworten und die Bedeutung eines effektiven Trainingsplans zu betonen.
 """
 
 my_instance_context = """
@@ -20,16 +20,14 @@ my_instance_context = """
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Heisse den User willkommen
 """
 
 bot = Chatbot(
     database_file="database/chatbot.db", 
-    type_id="demo",
-    user_id="demo",
-    type_name="Health Coach",
+    type_id="demo2",
+    user_id="demo2",
+    type_name="Sport Coach",
     type_role=my_type_role,
     instance_context=my_instance_context,
     instance_starter=my_instance_starter
